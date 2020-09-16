@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMaps>
+    <ComponentMap Name="commons-cli">
+        <Component Name="commons-cli.Other">
+            <RoleAssignmentGroup Name="Users">
+                <Type>group</Type>
+                <Name>developer</Name>
+                <Level>component</Level>
+            </RoleAssignmentGroup>
+        </Component>
+    </ComponentMap>
+    <ComponentMap Name="Default">
+        <Description>Built in Default component map</Description>
+        <Component Name="Default.Other">
+            <RoleAssignmentGroup Name="eng">
+                <Domain>coverity.com</Domain>
+                <Type>group</Type>
+                <Name>noAccess</Name>
+                <Level>component</Level>
+            </RoleAssignmentGroup>
+            <RoleAssignmentGroup Name="eng-se">
+                <Domain>coverity.com</Domain>
+                <Type>group</Type>
+                <Name>viewFiles</Name>
+                <Level>component</Level>
+            </RoleAssignmentGroup>
+            <RoleAssignmentGroup Name="Users">
+                <Type>group</Type>
+                <Name>developer</Name>
+                <Level>component</Level>
+            </RoleAssignmentGroup>
+        </Component>
+    </ComponentMap>
+    <ComponentMap Name="DosBox">
+        <Description>Components for DosBox</Description>
+        <Component Name="DosBox.CPU">
+            <RoleAssignmentGroup Name="Users">
+                <Type>group</Type>
+                <Name>developer</Name>
+                <Level>component</Level>
+            </RoleAssignmentGroup>
+        </Component>
+        <Component Name="DosBox.Debug">
+            <RoleAssignmentGroup Name="Users">
+                <Type>group</Type>
+                <Name>developer</Name>
+                <Level>component</Level>
+            </RoleAssignmentGroup>
+        </Component>
+        <Component Name="DosBox.Dos">
+            <RoleAssignmentGroup Name="Users">
+                <Type>group</Type>
+                <Name>developer</Name>
+                <Level>component</Level>
+            </RoleAssignmentGroup>
+        </Component>
+        <Component Name="DosBox.FPU">
+            <RoleAssignmentGroup Name="Users">
+                <Type>group</Type>
+                <Name>developer</Name>
+                <Level>component</Level>
+            </RoleAssignmentGroup>
+        </Component>
+        <Component Name="DosBox.GUI">
+            <RoleAssignmentGroup Name="Users">
+                <Type>group</Type>
+                <Name>developer</Name>
+                <Level>component</Level>
+            </RoleAssignmentGroup>
+        </Component>
+        <Component Name="DosBox.Hardware">
+            <RoleAssignmentGroup Name="Users">
+                <Type>group</Type>
+                <Name>developer</Name>
+                <Level>component</Level>
+            </RoleAssignmentGroup>
+        </Component>
+        <Component Name="DosBox.Ints">
+            <RoleAssignmentGroup Name="Users">
+                <Type>group</Type>
+                <Name>developer</Name>
+                <Level>component</Level>
+            </RoleAssignmentGroup>
+        </Component>
+        <Component Name="DosBox.Misc">
+            <RoleAssignmentGroup Name="Users">
+                <Type>group</Type>
+                <Name>developer</Name>
+                <Level>component</Level>
+            </RoleAssignmentGroup>
+        </Component>
+        <Component Name="DosBox.Other">
+            <RoleAssignmentGroup Name="Users">
+                <Type>group</Type>
+                <Name>developer</Name>
+                <Level>component</Level>
+            </RoleAssignmentGroup>
+        </Component>
+        <Component Name="DosBox.Shell">
+            <RoleAssignmentGroup Name="Users">
+                <Type>group</Type>
+                <Name>developer</Name>
+                <Level>component</Level>
+            </RoleAssignmentGroup>
+        </Component>
+        <PathRule Name="DosBox.Debug">
+            <Pattern>.*/debug/.*</Pattern>
+        </PathRule>
+        <PathRule Name="DosBox.CPU">
+            <Pattern>.*/cpu/.*</Pattern>
+        </PathRule>
+        <PathRule Name="DosBox.Dos">
+            <Pattern>.*/dos/.*</Pattern>
+        </PathRule>
+        <PathRule Name="DosBox.FPU">
+            <Pattern>.*/fpu/.*</Pattern>
+        </PathRule>
+        <PathRule Name="DosBox.GUI">
+            <Pattern>.*/gui/.*</Pattern>
+        </PathRule>
+        <PathRule Name="DosBox.Hardware">
+            <Pattern>.*/hardware/.*</Pattern>
+        </PathRule>
+        <PathRule Name="DosBox.Ints">
+            <Pattern>.*/ints/.*</Pattern>
+        </PathRule>
+        <PathRule Name="DosBox.Misc">
+            <Pattern>.*/misc/.*</Pattern>
+        </PathRule>
+        <PathRule Name="DosBox.Shell">
+            <Pattern>.*/shell/.*</Pattern>
+        </PathRule>
+        <DefectRule Name="DosBox.CPU">
+            <Owner>config</Owner>
+        </DefectRule>
+        <DefectRule Name="DosBox.Debug">
+            <Owner>u11</Owner>
+        </DefectRule>
+        <DefectRule Name="DosBox.Dos">
+            <Owner>kmadsen</Owner>
+        </DefectRule>
+        <DefectRule Name="DosBox.FPU">
+            <Owner>rdave@coverity.com</Owner>
+        </DefectRule>
+        <DefectRule Name="DosBox.GUI">
+            <Owner>u21</Owner>
+        </DefectRule>
+        <DefectRule Name="DosBox.Hardware">
+            <Owner>u13</Owner>
+        </DefectRule>
+        <DefectRule Name="DosBox.Ints">
+            <Owner>u22</Owner>
+        </DefectRule>
+        <DefectRule Name="DosBox.Misc">
+            <Owner>u23</Owner>
+        </DefectRule>
+        <DefectRule Name="DosBox.Other">
+            <Owner>admin</Owner>
+        </DefectRule>
+        <DefectRule Name="DosBox.Shell">
+            <Owner>u24</Owner>
+        </DefectRule>
+    </ComponentMap>
+    <ComponentMap Name="openMRS">
+        <Component Name="openMRS.API"/>
+        <Component Name="openMRS.Other"/>
+        <Component Name="openMRS.Release Test"/>
+        <Component Name="openMRS.Tools"/>
+        <Component Name="openMRS.Web"/>
+        <Component Name="openMRS.WebAPP"/>
+        <PathRule Name="openMRS.Web">
+            <Pattern>.*/web/.*</Pattern>
+        </PathRule>
+        <PathRule Name="openMRS.API">
+            <Pattern>.*/api/.*</Pattern>
+        </PathRule>
+        <PathRule Name="openMRS.Release Test">
+            <Pattern>.*/release-test/.*</Pattern>
+        </PathRule>
+        <PathRule Name="openMRS.WebAPP">
+            <Pattern>.*/webapp/.*</Pattern>
+        </PathRule>
+        <PathRule Name="openMRS.Tools">
+            <Pattern>.*/tools/.*</Pattern>
+        </PathRule>
+        <PathRule Name="openMRS.Other">
+            <Pattern>.*</Pattern>
+        </PathRule>
+        <DefectRule Name="openMRS.API">
+            <Owner>kmadsen</Owner>
+        </DefectRule>
+        <DefectRule Name="openMRS.Release Test">
+            <Owner>rdave@coverity.com</Owner>
+        </DefectRule>
+        <DefectRule Name="openMRS.Tools">
+            <Owner>u13</Owner>
+        </DefectRule>
+        <DefectRule Name="openMRS.Web">
+            <Owner>james</Owner>
+        </DefectRule>
+        <DefectRule Name="openMRS.WebAPP">
+            <Owner>u23</Owner>
+        </DefectRule>
+    </ComponentMap>
+    <ComponentMap Name="SDL">
+        <Description>Simple DirectMedia Layer</Description>
+        <Component Name="SDL.Microsoft">
+            <RoleAssignmentGroup Name="Users">
+                <Type>group</Type>
+                <Name>noAccess</Name>
+                <Level>component</Level>
+            </RoleAssignmentGroup>
+        </Component>
+        <Component Name="SDL.Other"/>
+        <Component Name="SDL.audio"/>
+        <Component Name="SDL.cdrom"/>
+        <Component Name="SDL.cpuinfo"/>
+        <Component Name="SDL.events"/>
+        <Component Name="SDL.file"/>
+        <Component Name="SDL.hermes"/>
+        <Component Name="SDL.joystick"/>
+        <Component Name="SDL.loadso"/>
+        <Component Name="SDL.main"/>
+        <Component Name="SDL.stdlib"/>
+        <Component Name="SDL.thread"/>
+        <Component Name="SDL.timer"/>
+        <Component Name="SDL.video"/>
+        <PathRule Name="SDL.audio">
+            <Pattern>.*/audio/.*</Pattern>
+        </PathRule>
+        <PathRule Name="SDL.cdrom">
+            <Pattern>.*/cdrom/.*</Pattern>
+        </PathRule>
+        <PathRule Name="SDL.cpuinfo">
+            <Pattern>.*/cpuinfo/.*</Pattern>
+        </PathRule>
+        <PathRule Name="SDL.events">
+            <Pattern>.*/events/.*</Pattern>
+        </PathRule>
+        <PathRule Name="SDL.file">
+            <Pattern>.*/file/.*</Pattern>
+        </PathRule>
+        <PathRule Name="SDL.hermes">
+            <Pattern>.*/hermes/.*</Pattern>
+        </PathRule>
+        <PathRule Name="SDL.joystick">
+            <Pattern>.*/joystick/.*</Pattern>
+        </PathRule>
+        <PathRule Name="SDL.loadso">
+            <Pattern>.*/loadso/.*</Pattern>
+        </PathRule>
+        <PathRule Name="SDL.main">
+            <Pattern>.*/main/.*</Pattern>
+        </PathRule>
+        <PathRule Name="SDL.stdlib">
+            <Pattern>.*/stdlib/.*</Pattern>
+        </PathRule>
+        <PathRule Name="SDL.thread">
+            <Pattern>.*/thread/.*</Pattern>
+        </PathRule>
+        <PathRule Name="SDL.timer">
+            <Pattern>.*/timer/.*</Pattern>
+        </PathRule>
+        <PathRule Name="SDL.video">
+            <Pattern>.*/video/.*</Pattern>
+        </PathRule>
+        <PathRule Name="SDL.Microsoft">
+            <Pattern>.*/[Mm]icrosoft [Vv]isual.*</Pattern>
+        </PathRule>
+        <DefectRule Name="SDL.Other">
+            <Owner>se</Owner>
+        </DefectRule>
+        <DefectRule Name="SDL.audio">
+            <Owner>james</Owner>
+        </DefectRule>
+        <DefectRule Name="SDL.cdrom">
+            <Owner>kmadsen</Owner>
+        </DefectRule>
+        <DefectRule Name="SDL.cpuinfo">
+            <Owner>se</Owner>
+        </DefectRule>
+        <DefectRule Name="SDL.events">
+            <Owner>u11</Owner>
+        </DefectRule>
+        <DefectRule Name="SDL.file">
+            <Owner>u12</Owner>
+        </DefectRule>
+        <DefectRule Name="SDL.hermes">
+            <Owner>u13</Owner>
+        </DefectRule>
+        <DefectRule Name="SDL.joystick">
+            <Owner>u24</Owner>
+        </DefectRule>
+        <DefectRule Name="SDL.loadso">
+            <Owner>u22</Owner>
+        </DefectRule>
+        <DefectRule Name="SDL.main">
+            <Owner>rdave@coverity.com</Owner>
+        </DefectRule>
+        <DefectRule Name="SDL.stdlib">
+            <Owner>config</Owner>
+        </DefectRule>
+        <DefectRule Name="SDL.thread">
+            <Owner>u23</Owner>
+        </DefectRule>
+        <DefectRule Name="SDL.timer">
+            <Owner>james</Owner>
+        </DefectRule>
+        <DefectRule Name="SDL.video">
+            <Owner>kmadsen</Owner>
+        </DefectRule>
+    </ComponentMap>
+    <ComponentMap Name="VSVIM">
+        <Component Name="VSVIM.App"/>
+        <Component Name="VSVIM.Core"/>
+        <Component Name="VSVIM.Interfaces"/>
+        <Component Name="VSVIM.Other">
+            <RoleAssignmentGroup Name="Users">
+                <Type>group</Type>
+                <Name>developer</Name>
+                <Level>component</Level>
+            </RoleAssignmentGroup>
+        </Component>
+        <Component Name="VSVIM.VS Specific"/>
+        <Component Name="VSVIM.VsVim"/>
+        <Component Name="VSVIM.VsVim Shared"/>
+        <Component Name="VSVIM.Vsix Util"/>
+        <Component Name="VSVIM.Wpf"/>
+        <PathRule Name="VSVIM.App">
+            <Pattern>.*/VimApp/.*</Pattern>
+        </PathRule>
+        <PathRule Name="VSVIM.Core">
+            <Pattern>.*/VimCore/.*</Pattern>
+        </PathRule>
+        <PathRule Name="VSVIM.Wpf">
+            <Pattern>.*/VimWpf/.*</Pattern>
+        </PathRule>
+        <PathRule Name="VSVIM.VS Specific">
+            <Pattern>.*/VsSpecific/.*</Pattern>
+        </PathRule>
+        <PathRule Name="VSVIM.Interfaces">
+            <Pattern>.*/VsInterfaces/.*</Pattern>
+        </PathRule>
+        <PathRule Name="VSVIM.Vsix Util">
+            <Pattern>.*/VsixUtil/.*</Pattern>
+        </PathRule>
+        <PathRule Name="VSVIM.VsVim">
+            <Pattern>.*/VsVim/.*</Pattern>
+        </PathRule>
+        <PathRule Name="VSVIM.VsVim Shared">
+            <Pattern>.*/VsVimShared/.*</Pattern>
+        </PathRule>
+    </ComponentMap>
+</CMaps>

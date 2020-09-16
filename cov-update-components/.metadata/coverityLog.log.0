@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-07-17T12:30:46</date>
+  <millis>1500287446076</millis>
+  <sequence>0</sequence>
+  <logger>Coverity Logger</logger>
+  <level>FINER</level>
+  <class>com.coverity.desktop.launcher.Activator</class>
+  <method>start(line: 125)</method>
+  <thread>1</thread>
+  <message>Log file directory for the Coverity Plugin set to: /data/home/siguser/proj/cov-update-components/.metadata/</message>
+</record>
+<record>
+  <date>2017-07-17T12:32:30</date>
+  <millis>1500287550627</millis>
+  <sequence>1</sequence>
+  <logger>Coverity Logger</logger>
+  <level>FINER</level>
+  <class>com.coverity.desktop.ws.JaxWsLoggingHandler</class>
+  <method>handleMessage(line: 20)</method>
+  <thread>55</thread>
+  <message>
+From handler method: handleMessage
+Request
+Endpoint: http://:8080/ws/v9/configurationservice
+Charset: null
+Operation: getLastUpdateTimes
+ResponseCode: null
+</message>
+</record>
+<record>
+  <date>2017-07-17T12:32:30</date>
+  <millis>1500287550706</millis>
+  <sequence>2</sequence>
+  <logger>Coverity Logger</logger>
+  <level>FINER</level>
+  <class>com.coverity.desktop.ws.JaxWsLoggingHandler</class>
+  <method>close(line: 32)</method>
+  <thread>55</thread>
+  <message>
+From handler method: close
+Request
+Endpoint: http://:8080/ws/v9/configurationservice
+Charset: null
+Operation: getLastUpdateTimes
+ResponseCode: 401
+</message>
+</record>
+<record>
+  <date>2017-07-17T12:32:30</date>
+  <millis>1500287550711</millis>
+  <sequence>3</sequence>
+  <logger>Coverity Logger</logger>
+  <level>FINE</level>
+  <class>com.coverity.desktop.platform.concurrent.Async$8</class>
+  <method>get(line: 280)</method>
+  <thread>55</thread>
+  <message>The server sent HTTP status code 401: Unauthorized</message>
+</record>
+<record>
+  <date>2017-07-17T12:32:30</date>
+  <millis>1500287550723</millis>
+  <sequence>4</sequence>
+  <logger>Coverity Logger</logger>
+  <level>FINE</level>
+  <class>com.coverity.desktop.platform.concurrent.Async$8</class>
+  <method>get(line: 280)</method>
+  <thread>55</thread>
+  <message>The server sent HTTP status code 401: Unauthorized</message>
+  <param>com.sun.xml.internal.ws.client.ClientTransportException: The server sent HTTP status code 401: Unauthorized
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.checkStatusCode(HttpTransportPipe.java:310)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.createResponsePacket(HttpTransportPipe.java:259)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.process(HttpTransportPipe.java:217)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.processRequest(HttpTransportPipe.java:130)
+	at com.sun.xml.internal.ws.transport.DeferredTransportPipe.processRequest(DeferredTransportPipe.java:95)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Fiber.java:1121)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Fiber.java:1035)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Fiber.java:1004)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.run(Fiber.java:798)
+	at com.sun.xml.internal.ws.api.server.ThreadLocalContainerResolver$2$1.run(ThreadLocalContainerResolver.java:97)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+</param>
+</record>
+<record>
+  <date>2017-07-17T12:32:30</date>
+  <millis>1500287550756</millis>
+  <sequence>5</sequence>
+  <logger>Coverity Logger</logger>
+  <level>FINE</level>
+  <class>com.google.common.util.concurrent.Futures$FallbackFuture$1</class>
+  <method>onFailure(line: 465)</method>
+  <thread>55</thread>
+  <message>The server sent HTTP status code 401: Unauthorized</message>
+</record>
+<record>
+  <date>2017-07-17T12:32:30</date>
+  <millis>1500287550756</millis>
+  <sequence>6</sequence>
+  <logger>Coverity Logger</logger>
+  <level>FINE</level>
+  <class>com.google.common.util.concurrent.Futures$FallbackFuture$1</class>
+  <method>onFailure(line: 465)</method>
+  <thread>55</thread>
+  <message>The server sent HTTP status code 401: Unauthorized</message>
+  <param>com.sun.xml.internal.ws.client.ClientTransportException: The server sent HTTP status code 401: Unauthorized
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.checkStatusCode(HttpTransportPipe.java:310)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.createResponsePacket(HttpTransportPipe.java:259)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.process(HttpTransportPipe.java:217)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.processRequest(HttpTransportPipe.java:130)
+	at com.sun.xml.internal.ws.transport.DeferredTransportPipe.processRequest(DeferredTransportPipe.java:95)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Fiber.java:1121)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Fiber.java:1035)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Fiber.java:1004)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.run(Fiber.java:798)
+	at com.sun.xml.internal.ws.api.server.ThreadLocalContainerResolver$2$1.run(ThreadLocalContainerResolver.java:97)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+</param>
+</record>
+<record>
+  <date>2017-07-17T12:32:30</date>
+  <millis>1500287550881</millis>
+  <sequence>7</sequence>
+  <logger>Coverity Logger</logger>
+  <level>FINE</level>
+  <class>com.coverity.desktop.eclipse.jobs.CancellableJob</class>
+  <method>run(line: 49)</method>
+  <thread>25</thread>
+  <message>com.coverity.desktop.platform.exceptions.IssuesProcessingException: Loading issue details failed.  No results file found at /data/home/siguser/proj/cov-update-components/.metadata/coverity/Default/desktop/lastAnalysisSuccess.json</message>
+</record>
+<record>
+  <date>2017-07-17T12:32:30</date>
+  <millis>1500287550882</millis>
+  <sequence>8</sequence>
+  <logger>Coverity Logger</logger>
+  <level>FINE</level>
+  <class>com.coverity.desktop.eclipse.jobs.CancellableJob</class>
+  <method>run(line: 49)</method>
+  <thread>25</thread>
+  <message>com.coverity.desktop.platform.exceptions.IssuesProcessingException: Loading issue details failed.  No results file found at /data/home/siguser/proj/cov-update-components/.metadata/coverity/Default/desktop/lastAnalysisSuccess.json</message>
+  <param>java.util.concurrent.ExecutionException: com.coverity.desktop.platform.exceptions.IssuesProcessingException: Loading issue details failed.  No results file found at /data/home/siguser/proj/cov-update-components/.metadata/coverity/Default/desktop/lastAnalysisSuccess.json
+	at com.google.common.util.concurrent.AbstractFuture$Sync.getValue(AbstractFuture.java:299)
+	at com.google.common.util.concurrent.AbstractFuture$Sync.get(AbstractFuture.java:286)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:116)
+	at com.coverity.desktop.platform.concurrent.Threading.join(Threading.java:93)
+	at com.coverity.desktop.eclipse.jobs.NonBlockingTask.runImpl(NonBlockingTask.java:32)
+	at com.coverity.desktop.eclipse.jobs.CancellableJob.run(CancellableJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: com.coverity.desktop.platform.exceptions.IssuesProcessingException: Loading issue details failed.  No results file found at /data/home/siguser/proj/cov-update-components/.metadata/coverity/Default/desktop/lastAnalysisSuccess.json
+	at com.coverity.desktop.model.services.impl.CoverityIssuesServiceImpl$1.apply(CoverityIssuesServiceImpl.java:61)
+	at com.coverity.desktop.model.services.impl.CoverityIssuesServiceImpl$1.apply(CoverityIssuesServiceImpl.java:1)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:849)
+	at com.coverity.desktop.platform.concurrent.UIExecutors$DirectExecutor.execute(UIExecutors.java:55)
+	at com.coverity.desktop.eclipse.services.EclipseThreadingService$4.addListener(EclipseThreadingService.java:208)
+	at com.google.common.util.concurrent.Futures.transform(Futures.java:606)
+	at com.coverity.desktop.platform.concurrent.Threading.runOnBackgroundThreadAsync(Threading.java:255)
+	at com.coverity.desktop.model.services.impl.CoverityIssuesServiceImpl.getCoverityIssuesAsync(CoverityIssuesServiceImpl.java:52)
+	at com.coverity.desktop.model.services.impl.CoverityIssuesServiceImpl.getLastSuccessfullCoverityIssuesAsync(CoverityIssuesServiceImpl.java:45)
+	at com.coverity.desktop.process.services.impl.IssuesServiceImpl$4.apply(IssuesServiceImpl.java:335)
+	at com.coverity.desktop.process.services.impl.IssuesServiceImpl$4.apply(IssuesServiceImpl.java:1)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:849)
+	at com.coverity.desktop.platform.concurrent.UIExecutors$DirectExecutor.execute(UIExecutors.java:55)
+	at com.coverity.desktop.eclipse.services.EclipseThreadingService$4.addListener(EclipseThreadingService.java:208)
+	at com.google.common.util.concurrent.Futures.transform(Futures.java:606)
+	at com.coverity.desktop.platform.MoreFutures.transform(MoreFutures.java:101)
+	at com.coverity.desktop.process.services.impl.IssuesServiceImpl.getLocalIssuesAsync(IssuesServiceImpl.java:319)
+	at com.coverity.desktop.model.views.issues.IssuesPresenter$38.apply(IssuesPresenter.java:905)
+	at com.coverity.desktop.model.views.issues.IssuesPresenter$38.apply(IssuesPresenter.java:1)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:849)
+	at com.coverity.desktop.platform.concurrent.UIExecutors$DirectExecutor.execute(UIExecutors.java:55)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:145)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:185)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture$1.run(Futures.java:860)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:297)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:145)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:185)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture$1.run(Futures.java:860)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:297)
+	at com.google.common.util.concurrent.Futures$ImmediateFuture.addListener(Futures.java:100)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:856)
+	at com.coverity.desktop.platform.concurrent.UIExecutors$DirectExecutor.execute(UIExecutors.java:55)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:145)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:185)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture$1.run(Futures.java:860)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:297)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.add(ExecutionList.java:101)
+	at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:170)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:856)
+	at com.coverity.desktop.platform.concurrent.UIExecutors$DirectExecutor.execute(UIExecutors.java:55)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:145)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:185)
+	at com.google.common.util.concurrent.Futures$FallbackFuture$1.onSuccess(Futures.java:456)
+	at com.google.common.util.concurrent.Futures$4.run(Futures.java:1169)
+	at com.coverity.desktop.platform.concurrent.UIExecutors$DirectExecutor.execute(UIExecutors.java:55)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:145)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:185)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture$1.run(Futures.java:860)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:297)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:145)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:185)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture$1.run(Futures.java:860)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:297)
+	at com.google.common.util.concurrent.Futures$ImmediateFuture.addListener(Futures.java:100)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:856)
+	at com.coverity.desktop.platform.concurrent.UIExecutors$DirectExecutor.execute(UIExecutors.java:55)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:145)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:185)
+	at com.google.common.util.concurrent.Futures$FallbackFuture$1.onSuccess(Futures.java:456)
+	at com.google.common.util.concurrent.Futures$4.run(Futures.java:1169)
+	at com.coverity.desktop.platform.concurrent.UIExecutors$DirectExecutor.execute(UIExecutors.java:55)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:145)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:185)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture$1.run(Futures.java:860)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:297)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.execute(ExecutionList.java:145)
+	at com.google.common.util.concurrent.AbstractFuture.set(AbstractFuture.java:185)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture$1.run(Futures.java:860)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:297)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.add(ExecutionList.java:101)
+	at com.google.common.util.concurrent.AbstractFuture.addListener(AbstractFuture.java:170)
+	at com.google.common.util.concurrent.Futures$ChainingListenableFuture.run(Futures.java:856)
+	at com.coverity.desktop.platform.concurrent.UIExecutors$DirectExecutor.execute(UIExecutors.java:55)
+	at com.coverity.desktop.eclipse.services.EclipseThreadingService$4$1.run(EclipseThreadingService.java:214)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.coverity.desktop.eclipse.services.EclipseThreadingService$2$1.run(EclipseThreadingService.java:89)
+	... 1 more
+</param>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-11-23T10:10:44</date>
+  <millis>1511428244022</millis>
+  <sequence>0</sequence>
+  <logger>Coverity Logger</logger>
+  <level>FINER</level>
+  <class>com.coverity.desktop.launcher.Activator</class>
+  <method>start(line: 125)</method>
+  <thread>1</thread>
+  <message>Log file directory for the Coverity Plugin set to: /data/home/siguser/proj/cov-update-components/.metadata/</message>
+</record>
+</log>

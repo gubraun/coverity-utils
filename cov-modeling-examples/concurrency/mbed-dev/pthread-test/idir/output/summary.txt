@@ -1,0 +1,9 @@
+cov-analyze --dir idir --disable-default --concurrency --model-file mythreads.xmldb 
+Analysis summary report:
+------------------------
+Files analyzed                 : 1
+Total LoC input to cov-analyze : 11201
+Functions analyzed             : 2
+Paths analyzed                 : 3
+Time taken by analysis         : 00:00:01
+Defect occurrences found       : 1 LOCK

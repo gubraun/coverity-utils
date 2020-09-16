@@ -1,0 +1,55 @@
+cmdline: command line: cov-analyze --dir idir --disable-default --concurrency --model-file mythreads.xmldb 
+cmdline: parsed cmdline: [
+cmdline:   { name: "dir", args: [ "idir" ] },
+cmdline:   { name: "disable-default" },
+cmdline:   { name: "concurrency" },
+cmdline:   { name: "model-file", args: [ "mythreads.xmldb" ] },
+cmdline:   { name: "config", args: [ "/data/opt/cov-analysis-linux64-8.5.0/config/coverity_config.xml" ] },
+cmdline: ]
+startup: am_pid=4733
+startup: detected platform: Linux 4.4.0-34-generic x86_64
+startup: target platform: linux64
+startup: Detected 2 logical cpus
+startup: Detected 2 cpu cores
+startup: host name: gunnar-vbox
+startup: user name: siguser
+startup: Analysis version: 8.5.0 (c8d197a567 p-kent-push-26368.915)
+startup: temp directory: /tmp/cov-siguser/bce9fe84b7883e9f2d9d98933bb63f5c
+startup: enable_constraint_fpp=0
+startup: current time: 2016-Aug-25 15:05:47
+startup: Detected amount of memory: 8175600kb
+startup: Limiting memory to 7358040kb
+wlink: Skipping web-app linking, no archives
+emitdb: callgraph.cpp:2680 11111111
+emitdb: callgraph.cpp:2703 11000011
+emitdb: callgraph.cpp:2723 11000011
+rta: Not running RTA because it doesn't apply to current languages
+emitdb: callgraph.cpp:2733 11000000
+dyncg: N/A or no data
+directives: Optimizing dataflow configuration
+general: Starting analysis
+dm-access-lib: AM listening for DM at 127.0.0.1:34211
+dm-access-lib: AM starting DM with command line: /data/opt/cov-analysis-linux64-8.5.0/bin/cov-internal-dm --AM-port 34211 --log-file /data/home/siguser/mbed-dev/pthread-test/idir/output/distributor.log -j 2 --AW-timeout 36000 /data/opt/cov-analysis-linux64-8.5.0/bin/cov-analyze --worker --message-size-limit 104857600
+dm-access-lib: DM started: dm_pid=4735
+dm-access-lib: AM got connection from DM: (local) 127.0.0.1:34211 - 127.0.0.1:42138 (remote)
+wurlegend: <phase><n> dw_id wup_bytes dw_ms wur_bytes aw_ms [mem] paths (rest are labeled)
+wur: conc0 1 1502 110 465 1 mem=7950336 max=55582720 2 n: _Z11update_dataP10s_memory_t in TU 1
+wur: conc1 1 830 2 229 2 1 n: main in TU 1
+wur: conctd0 1 756 3 65 3 1 n: main in TU 1
+wur: conctd1 1 1428 3 212 2 2 n: _Z11update_dataP10s_memory_t in TU 1
+wur: gen0 1 2320 42 373 34 3 nr=2 n: batch 0
+summary: Analysis summary report:
+summary: ------------------------
+summary: Files analyzed                 : 1
+summary: Total LoC input to cov-analyze : 11201
+summary: Functions analyzed             : 2
+summary: Paths analyzed                 : 3
+summary: Time taken by analysis         : 00:00:01
+summary: Defect occurrences found       : 1 LOCK
+summary: Number of functions: 2
+summary: out_of_memory count: 0
+summary: paths_exceeded count: 0
+summary: recoverable failures: 0
+mem: AM peak mem bytes: 57323520
+assert: suppressed asserts: workers=0, master=0
+failures: recoverable failures: workers=0, master=0

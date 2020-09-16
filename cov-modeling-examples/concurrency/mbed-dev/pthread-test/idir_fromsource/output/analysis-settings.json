@@ -1,0 +1,8 @@
+{
+  covAnalyzeArgs : [
+    "--concurrency",
+    "--disable-default"
+  ],
+  fileOptions : [],
+  fileCheckerOptions : []
+}

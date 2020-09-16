@@ -1,0 +1,43 @@
+{
+  "header" : {
+    "format" : "commit preview report",
+    "version" : 2
+  },
+  "analysisInfo" : {
+    "ownerAssignmentRule" : "default_component_owner",
+    "comparisonSnapshotId" : null,
+    "reportTimestamp" : "2016-08-25T13:08:38.288Z",
+    "user" : "admin",
+    "command" : "cov-analyze --dir idir --disable-default --concurrency --model-file mythreads.xmldb"
+  },
+  "issueInfo" : [ {
+    "cid" : 25375,
+    "mergeKey" : "2dcf51765b1b3bb23aee1e1614b8804b",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-08-25T13:08:38.288Z",
+    "occurrences" : [ {
+      "checker" : "LOCK",
+      "file" : "/data/home/siguser/mbed-dev/pthread-test/main_nested.cpp",
+      "function" : "_Z11update_dataP10s_memory_t",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "missing_unlock",
+      "mainEventLineNumber" : 15,
+      "mainEventDescription" : "Returning without unlocking \"_mx.mx\".",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : null
+  } ]
+}

@@ -1,0 +1,4 @@
+[LOG] run: /data/opt/cov-analysis-linux64-8.5.0/bin/cov-format-errors --dir /data/home/siguser/mbed-dev/pthread-test/idir --json-output-v5 /data/home/siguser/mbed-dev/pthread-test/idir/output/cov-blame/errors.json --outputdir /data/home/siguser/mbed-dev/pthread-test/idir/output
+[LOG] /data/opt/cov-analysis-linux64-8.5.0/bin/cov-format-errors exits successfully.
+[INFO] Computing likely owner for 25375 [2dcf51765b1b3bb23aee1e1614b8804b]:
+[INFO] 	default_component_owner: none

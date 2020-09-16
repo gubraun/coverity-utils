@@ -1,0 +1,37 @@
+<error>
+<domain>STATIC_C</domain>
+<lang>C++</lang>
+<checker>LOCK</checker>
+<file>/data/home/siguser/mbed-dev/pthread-test/main_nested.cpp</file>
+<function>_Z11update_dataP10s_memory_t</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>lock</tag>
+<description>{CovLStrv2{{t{{0} locks {1}.}{{code{my_mutex_lock}}}{{code{_mx.mx}}}}}}</description>
+<line>12</line>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch.}{{code{m-&gt;meta != 0}}}}}}</description>
+<line>14</line>
+<path_event></path_event>
+</event>
+<event>
+<main>true</main>
+<tag>missing_unlock</tag>
+<description>{CovLStrv2{{t{Returning without unlocking {0}.}{{code{_mx.mx}}}}}}</description>
+<line>15</line>
+</event>
+<extra></extra>
+<subcategory>missing_unlock</subcategory>
+<typePropertiesGroup>
+<category>Program hangs</category>
+<impact>Medium</impact>
+<type>Missing unlock</type>
+<cwe>667</cwe>
+<localEffect>May result in deadlock if there is another attempt to acquire the lock.</localEffect>
+<longDescription>Missing a release of a lock on a path</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
