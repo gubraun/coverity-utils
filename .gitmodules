@@ -2,3 +2,7 @@
 	path = cov-modeling-examples/concurrency/mbed-dev/mbed-os-example-blinky/mbed-os
 	url = https://github.com/ARMmbed/mbed-os
 	branch = mbed-os-5.1
+[submodule "cov-modeling-examples/concurrency/mbed-dev/mbed-os-example-uvisor/mbed-os"]
+	path = cov-modeling-examples/concurrency/mbed-dev/mbed-os-example-uvisor/mbed-os
+	url = https://github.com/ARMmbed/mbed-os
+	branch = mbed-os-5.1

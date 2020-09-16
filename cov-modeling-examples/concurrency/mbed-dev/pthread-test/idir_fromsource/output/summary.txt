@@ -1,9 +1,0 @@
-cov-analyze --dir idir_fromsource --disable-default --concurrency 
-Analysis summary report:
-------------------------
-Files analyzed                 : 2
-Total LoC input to cov-analyze : 11210
-Functions analyzed             : 4
-Paths analyzed                 : 5
-Time taken by analysis         : 00:00:01
-Defect occurrences found       : 1 LOCK
