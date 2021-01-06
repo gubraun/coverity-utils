@@ -99,7 +99,8 @@ def get_defect_function(defect):
         if not defect.functionDisplayName:
             return ""
         else:
-            return defect.functionDisplayName
+            #return defect.functionDisplayName
+            return defect.functionName
     except AttributeError:
         return ""
 
@@ -252,7 +253,7 @@ if __name__ == '__main__':
                 get_defect_component(defect) + args.separator +
                 get_defect_category(defect) + args.separator +
                 get_defect_file(defect) + args.separator +
-                get_defect_function(defect) + args.separator +
+                "\"" + get_defect_function(defect) + "\"" + args.separator +
                 get_defect_count(defect) + args.separator +
                 get_defect_issuekind(defect),
                 file=output_file
