@@ -199,7 +199,7 @@ if __name__ == '__main__':
                 break
         if snapshot_found:
             snapshot_filt.showSelector = args.snapshot
-            print("Snapshot specified, will use " + args.snapshot)
+            print("Snapshot specified, will use " + str(args.snapshot))
         else:
            sys.stderr.write("[Error] stream " + stream_id.name + " doesn't have snapshot with id " + str(args.snapshot) + "\n")
            exit(1)
