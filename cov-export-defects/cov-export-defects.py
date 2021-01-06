@@ -234,15 +234,14 @@ if __name__ == '__main__':
         ]
 
     #print("CID,Type,Impact,Status,First Detected,Owner,Classification,Severity,Action,Component,Category,File,Function,Count,Issue Kind", file=output_file)
-    for f in fields:
-        print(f + args.separator, file=output_file)
+    print(args.separator.join(fields), file=output_file)
  
     while remaining_defects > 0:
         defects_last_page = 0
         for defect in defect_page.mergedDefects:
             print(
                 get_defect_cid(defect) + args.separator +
-                get_defect_type(defect) + args.separator +
+                "\"" + get_defect_type(defect) + "\"" + args.separator +
                 get_defect_impact(defect) + args.separator +
                 get_defect_status(defect) + args.separator +
                 get_defect_firstdetected(defect) + args.separator +
