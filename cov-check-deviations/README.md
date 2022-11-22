@@ -1,6 +1,9 @@
 # cov-check-deviations
 Checks Coverity defects with classification `Intentional` for triage comments and sets `Deviation Status` attribute accordingly. 
 
+## Purpose
+The script searches the defect's triage history for user triage comments on `Intentional` defect. If a comment is found, it sets the `Deviation Status` attribute to `Ready for Review`. If no comment is found, it sets it to `Comment Needed`. This will help quality engineers to find and audit deviation records.
+
 ## Install
 ```
 python -m venv venv
