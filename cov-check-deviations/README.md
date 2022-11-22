@@ -2,7 +2,11 @@
 Checks Coverity defects with classification `Intentional` for triage comments and sets `Deviation Status` attribute accordingly. 
 
 ## Install
-`pip install requests`
+```
+python -m venv venv
+. ./venv/Scripts/activate
+pip install requests
+```
 
 ## Run
 ```
